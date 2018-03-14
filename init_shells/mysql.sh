@@ -1,7 +1,9 @@
-sudo yum -y install http://dev.mysql.com/get/mysql57-community-release-el6-7.noarch.rpm
-sudo yum -y install mysql-community-server
-sudo chkconfig mysqld on
-sudo service mysqld start
+## !! must execute by root user !!
+
+yum -y install http://dev.mysql.com/get/mysql57-community-release-el6-7.noarch.rpm
+yum -y install mysql-community-server
+chkconfig mysqld on
+service mysqld start
 
 ## password の変更
 # /var/log/mysqld.log を開いて password で検索し, 初期パスワードを確認

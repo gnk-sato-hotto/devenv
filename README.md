@@ -25,9 +25,4 @@ docker build .
 
 ## exec bash 
 docker run -it ${img_id} /bin/bash 
-
-## include modules as ec2-user
-cd init_shells
-su ec2-user 
-./general.sh
 ```

@@ -1,1 +1,1 @@
-sudo yum install -y tree
+yum install -y tree
